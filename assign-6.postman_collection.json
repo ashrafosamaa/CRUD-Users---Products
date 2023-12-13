@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "6bad16cf-fc81-46af-9e48-bfeff369be81",
+		"name": "assign-6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30814973",
+		"_collection_link": "https://planetary-sunset-510298.postman.co/workspace/Assignment-Route~e67ac1f9-9e31-46f0-8b8c-dcd959559faa/collection/30814973-6bad16cf-fc81-46af-9e48-bfeff369be81?action=share&source=collection_link&creator=30814973"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"ashraf\",\r\n    \"email\": \"ashraf@gmail.com\",\r\n    \"password\": \"a@123\",\r\n    \"age\": 21,\r\n    \"phone\": \"01153152002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"ashraf@gmail.com\",\r\n    \"password\": \"a@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"ashraf\",\r\n    \"email\": \"ashraf@gmail.com\",\r\n    \"password\": \"a@123\",\r\n    \"age\": 21,\r\n    \"phone\": \"01153152002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateUser?_id=6575f4d71d5e8c5f2f26d608",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateUser"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "6575f4d71d5e8c5f2f26d608"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"ashraf@gmail.com\",\r\n    \"password\": \"a@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/deleteUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findUserOne",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"X\": \"s\",\r\n    \"Y\": 19\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/findUserOne",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"findUserOne"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findUserTwo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"X\": 24,\r\n    \"Y\": 25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/findUserTwo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"findUserTwo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/listUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsersAndProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/getUsersAndProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getUsersAndProducts"
+							],
+							"query": [
+								{
+									"key": "userID",
+									"value": "6575f85cf2ee7a03a7cde1dc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "addProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"product3\",\r\n    \"desc\": \"desc3\",\r\n    \"price\": 1700,\r\n    \"userID\": \"6575e3f3b4aeaa3ffdd5431b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/deleteProduct?_id=6576124677d4792350939079&userID=6575f85cf2ee7a03a7cde1dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"deleteProduct"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "6576124677d4792350939079"
+								},
+								{
+									"key": "userID",
+									"value": "6575f85cf2ee7a03a7cde1dc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProduct",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"product1\",\r\n    \"desc\": \"desc1\",\r\n    \"price\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateProduct?_id=6576127877d479235093907f&userID=6575f85cf2ee7a03a7cde1dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateProduct"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "6576127877d479235093907f"
+								},
+								{
+									"key": "userID",
+									"value": "6575f85cf2ee7a03a7cde1dc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/listProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"listProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductAndUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/getProductAndUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getProductAndUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "descProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/descProducts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"descProducts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
